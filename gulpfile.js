@@ -11,7 +11,7 @@ var sitemap     = require('gulp-sitemap');
 var pkgjson     = require('./package.json');
 
 // Settings
-var build  = pkgjson.version;
+var build  = 'v' + pkgjson.version;
 var prefix = build;
 var domain = 'raneto.com';
 

@@ -65,19 +65,19 @@ body {
 }
 
 a, a:visited {
-	color: #428BCA;
+	/* color: #428BCA; */
 	text-decoration: none;
 }
 a:hover, a:active {
-	color: #2A6496;
+	/* color: #2A6496; */
 	text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #222;
+	color: #222;
 	line-height: 1.2em;
 	margin-bottom: 0.6em;
-    -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 h1 {
 	font-size: 2.2em;
@@ -180,8 +180,8 @@ button:hover,
 
 .cf:before,
 .cf:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 .cf:after { clear: both; }
 .cf { *zoom: 1; }
@@ -191,68 +191,77 @@ button:hover,
 /*=================================*/
 
 .header {
-    background: #2C323D;
-    color: #ccc;
-    text-align: center;
-    padding: 40px 20px 0;
+	background: #2C323D;
+	color: #ccc;
+	text-align: center;
+	padding: 40px 20px 0;
 }
 .page-pricing .header { padding-bottom: 10px; }
 .header .logo {
-    display: inline-block;
-    font-size: 35px;
-    font-weight: 500;
-    color: #fff;
-    margin: 0 0 50px 0;
-    -webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-size: 35px;
+	font-weight: 500;
+	color: #fff;
+	margin: 0 0 50px 0;
+	-webkit-font-smoothing: antialiased;
 }
 .header h1 {
-    font-size: 40px;
-    font-weight: 300;
-    color: #fff;
-    margin: 0 0 10px 0;
+	font-size: 40px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0 0 10px 0;
 }
 .header p {
-    font-size: 18px;
-    max-width: 510px;
-    margin: 0 auto 40px;
-    -webkit-font-smoothing: antialiased;
+	font-size: 18px;
+	max-width: 510px;
+	margin: 0 auto 40px;
+	-webkit-font-smoothing: antialiased;
 }
 .header img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    padding: 40px 20px;
-    box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
+	position: relative;
+	z-index: 2;
+	padding: 40px 20px;
+	box-shadow: 0 -3px 15px rgba(0,0,0,0.2);
 }
 .content .row {
-    max-width: 830px;
-    margin: 0 auto 40px;
+	max-width: 830px;
+	margin: 0 auto 40px;
 }
 .content .col {
-    float: left;
-    width: 31%;
-    margin-right: 3.5%;
+	float: left;
+	width: 31%;
+	margin-right: 3.5%;
 }
 .content .col.last { margin-right: 0; }
 .content .row h3 { margin: 0 0 15px 0; }
 .content .other-features {
-    float: left;
-    width: 48%;
-    margin-right: 4%;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
 }
 .content .get-started {
-    float: left;
-    width: 48%;
+	float: left;
+	width: 48%;
 }
-.content .get-started .download a {
-    font-weight: bold;
-    color: #289912;
+.content .get-started .download {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-weight: bold;
+	/*
+	background-color: #289912;
+	background-color: #7cae72;
+	*/
+	background-color: #535353;
+	color: #ffffff;
 }
 .content .hosting {
 	background: #eee;
@@ -318,18 +327,19 @@ button:hover,
 p.enterprise { text-align: center; }
 
 .footer {
-    position: relative;
-    z-index: 3;
-    background: #fff;
-    padding: 0 20px;
-    font-size: 12px;
-    color: #999;
+	position: relative;
+	z-index: 3;
+	background: #fff;
+	padding: 0 20px;
+	font-size: 12px;
+	/* color: #999; */
+	color: #444444;
 }
 .footer .inner {
-    max-width: 830px;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-top: 1px solid #eee;
+	max-width: 830px;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-top: 1px solid #eee;
 }
 .footer p { margin: 0; }
 .footer .left { float: left; }
@@ -345,13 +355,15 @@ p.enterprise { text-align: center; }
 }
 
 @media only screen and (max-width : 480px) {
-    .content .col,
-    .content .other-features,
-    .content .get-started {
-        float: none;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .footer .left,
-    .footer .right { float: none; }
+	.content .col,
+	.content .other-features,
+	.content .get-started {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.footer .left,
+	.footer .right {
+		float: none;
+	}
 }
