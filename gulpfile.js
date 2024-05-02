@@ -2,18 +2,18 @@
 'use strict';
 
 // Modules
-var gulp        = require('gulp');
-var concat      = require('gulp-concat');
-var minify_css  = require('gulp-clean-css');
-var minify_html = require('gulp-htmlmin');
-var replace     = require('gulp-string-replace');
-var sitemap     = require('gulp-sitemap');
-var pkgjson     = require('./package.json');
+const gulp        = require('gulp');
+const concat      = require('gulp-concat');
+const minify_css  = require('gulp-clean-css');
+const minify_html = require('gulp-htmlmin');
+const replace     = require('gulp-string-replace');
+const sitemap     = require('gulp-sitemap');
+const pkgjson     = require('./package.json');
 
 // Settings
-var build  = 'v' + pkgjson.version;
-var prefix = build;
-var domain = 'raneto.com';
+const build  = 'v' + pkgjson.version;
+const prefix = build;
+const domain = 'raneto.com';
 
 // Debug Output
 console.log('BUILD:', build);
@@ -45,7 +45,7 @@ gulp.task('css', function () {
 // Static Files
 gulp.task('static', function () {
   return gulp
-    .src('./src/static/**/*', { base : './src/static' })
+    .src('./src/static/**/*', { encoding : false, base : './src/static' })
     .pipe(gulp.dest('./public/' + build + '/'));
 });
 
