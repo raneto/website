@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "gulp-concat": "2.6.1",
     "gulp-htmlmin": "5.0.1",
     "gulp-sitemap": "8.0.0",
-    "gulp-string-replace": "1.1.2"
+    "gulp-string-replace": "1.1.2",
+    "prettier": "3.2.5"
   }
 }
