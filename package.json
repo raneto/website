@@ -12,7 +12,7 @@
     "url": "git+https://github.com/raneto/website.git"
   },
   "author": "Ryan Lelek <ryanlelek@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/raneto/website/issues"
   },
